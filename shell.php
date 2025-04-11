@@ -1,4 +1,3 @@
-<!-- filepath: d:\Visual Studio Code\dreamhack\Command Injection Advanced\template.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
