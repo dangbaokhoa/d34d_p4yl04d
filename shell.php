@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form <!-- filepath: d:\Visual Studio Code\dreamhack\Command Injection Advanced\template.php -->
+<!-- filepath: d:\Visual Studio Code\dreamhack\Command Injection Advanced\template.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,12 +18,10 @@
     <pre>
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cmd'])) {
-    $cmd = $_POST['cmd']; 
+    $cmd = escapeshellcmd($_POST['cmd']); // Sanitize the input to prevent command injection
     echo htmlspecialchars(shell_exec($cmd)); // Execute the command and display the result
 }
 ?>
     </pre>
-</body>
-</html>
 </body>
 </html>
