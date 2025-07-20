@@ -14,6 +14,6 @@
 
   <!-- Trigger external requests -->
   <use xlink:href="https://webhook.site/8a05111e-5dfa-4237-b06d-a6a119beab70#someID" />
-  <image href="https://webhook.site/8a05111e-5dfa-4237-b06d-a6a119beab70" height="0" width="0" />
+  <image xlink:href="https://webhook.site/8a05111e-5dfa-4237-b06d-a6a119beab70" height="0" width="0" />
   <rect x="0" y="0" width="1" height="1" filter="url(#f1)" />
 </svg>
